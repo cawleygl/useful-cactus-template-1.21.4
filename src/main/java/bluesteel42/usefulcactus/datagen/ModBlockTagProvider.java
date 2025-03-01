@@ -23,6 +23,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.STRIPPED_CACTUS_WOOD);
 
         getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN).addOptionalTag(ModTags.Blocks.CACTUS_LOGS);
+
         getOrCreateTagBuilder(BlockTags.PLANKS).add(ModBlocks.CACTUS_PLANKS);
         getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS).add(ModBlocks.CACTUS_STAIRS);
         getOrCreateTagBuilder(BlockTags.WOODEN_SLABS).add(ModBlocks.CACTUS_SLAB);

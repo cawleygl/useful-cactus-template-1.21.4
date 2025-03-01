@@ -13,8 +13,8 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        blockStateModelGenerator.registerLog(ModBlocks.CACTUS_LOG).stem(ModBlocks.CACTUS_LOG).wood(ModBlocks.CACTUS_WOOD);
-        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_CACTUS_LOG).stem(ModBlocks.STRIPPED_CACTUS_LOG).wood(ModBlocks.STRIPPED_CACTUS_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.CACTUS_LOG).log(ModBlocks.CACTUS_LOG).wood(ModBlocks.CACTUS_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_CACTUS_LOG).log(ModBlocks.STRIPPED_CACTUS_LOG).wood(ModBlocks.STRIPPED_CACTUS_WOOD);
 
         BlockStateModelGenerator.BlockTexturePool cactusPlankPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CACTUS_PLANKS);
         cactusPlankPool.stairs(ModBlocks.CACTUS_STAIRS);

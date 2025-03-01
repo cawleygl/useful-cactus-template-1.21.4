@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks",
+  "ingredients": [
+    "#useful-cactus:cactus_logs"
+  ],
+  "result": {
+    "count": 4,
+    "id": "useful-cactus:cactus_planks"
+  }
+}

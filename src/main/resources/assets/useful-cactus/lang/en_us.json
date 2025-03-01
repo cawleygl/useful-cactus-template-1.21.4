@@ -1,5 +1,20 @@
 {
   "item.useful-cactus.cactus_pad": "Cactus Pad",
   "item.useful-cactus.cooked_cactus_pad": "Cooked Cactus Pad",
-  "item.useful-cactus.cactus_salad": "Cactus Salad"
+  "item.useful-cactus.cactus_salad": "Cactus Salad",
+
+  "block.useful-cactus.cactus_log": "Cactus Log",
+  "block.useful-cactus.cactus_wood": "Cactus Wood",
+  "block.useful-cactus.stripped_cactus_log": "Stripped Cactus Log",
+  "block.useful-cactus.stripped_cactus_wood": "Stripped Cactus Wood",
+
+  "block.useful-cactus.cactus_planks": "Cactus Planks",
+  "block.useful-cactus.cactus_stairs": "Cactus Stairs",
+  "block.useful-cactus.cactus_slab": "Cactus Slab",
+  "block.useful-cactus.cactus_button": "Cactus Button",
+  "block.useful-cactus.cactus_pressure_plate": "Cactus Pressure Plate",
+  "block.useful-cactus.cactus_fence": "Cactus Fence",
+  "block.useful-cactus.cactus_fence_gate": "Cactus Fence Gate",
+  "block.useful-cactus.cactus_door": "Cactus Door",
+  "block.useful-cactus.cactus_trapdoor": "Cactus Trapdoor"
 }

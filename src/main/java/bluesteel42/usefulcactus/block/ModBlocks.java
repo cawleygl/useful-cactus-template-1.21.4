@@ -26,12 +26,12 @@ public class ModBlocks {
             Blocks.createLogSettings(MapColor.PALE_GREEN, MapColor.GREEN, BlockSoundGroup.WOOD)
     );
 
-    public static final Block STRIPPED_CACTUS_WOOD = registerBlock("cactus_wood",
+    public static final Block STRIPPED_CACTUS_WOOD = registerBlock("stripped_cactus_wood",
             PillarBlock::new,
             AbstractBlock.Settings.create().mapColor(MapColor.PALE_GREEN).instrument(NoteBlockInstrument.BASS).strength(2.0F).sounds(BlockSoundGroup.WOOD).burnable()
     );
 
-    public static final Block STRIPPED_CACTUS_LOG = registerBlock("cactus_log",
+    public static final Block STRIPPED_CACTUS_LOG = registerBlock("stripped_cactus_log",
             PillarBlock::new,
             Blocks.createLogSettings(MapColor.PALE_GREEN, MapColor.PALE_GREEN, BlockSoundGroup.WOOD)
     );
