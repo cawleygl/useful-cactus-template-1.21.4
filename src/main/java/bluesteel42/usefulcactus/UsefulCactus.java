@@ -2,9 +2,9 @@ package bluesteel42.usefulcactus;
 
 import bluesteel42.usefulcactus.item.ModItems;
 import bluesteel42.usefulcactus.block.ModBlocks;
+import bluesteel42.usefulcactus.registries.ModRegistries;
 import net.fabricmc.api.ModInitializer;
 
-import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -23,10 +23,8 @@ public class UsefulCactus implements ModInitializer {
 		// Proceed with mild caution.
 		ModItems.initialize();
 		ModBlocks.initialize();
-
-		// Add the cactus items to the composting registry with a 30% chance of increasing the composter's level.
-		CompostingChanceRegistry.INSTANCE.add(ModItems.CACTUS_PAD, 0.3F);
-		CompostingChanceRegistry.INSTANCE.add(ModItems.COOKED_CACTUS_PAD, 0.5F);
+		ModRegistries.registerStrippables();
+		ModRegistries.registerCompostables();
 
 		LOGGER.info("Hello Fabric world!");
 	}
