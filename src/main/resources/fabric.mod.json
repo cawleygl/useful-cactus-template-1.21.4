@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "useful-cactus",
+	"version": "1.0.0",
+	"name": "Useful Cactus",
+	"description": "Craft cactus into logs, or uncraft into cactus pads which can be cooked, eaten, and turned into dye!",
+	"authors": [
+		"Blue_Steel42"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/useful-cactus/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"bluesteel42.usefulcactus.UsefulCactus"
+		],
+		"client": [
+			"bluesteel42.usefulcactus.UsefulCactusClient"
+		],
+		"fabric-datagen": [
+			"bluesteel42.usefulcactus.UsefulCactusDataGenerator"
+		]
+	},
+	"mixins": [
+		"useful-cactus.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

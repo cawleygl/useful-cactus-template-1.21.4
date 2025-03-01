@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "building",
+    "ingredients": [
+      "minecraft:cactus"
+    ],
+    "result": {
+      "count": 4,
+      "id": "useful-cactus:cactus_pad"
+    }
+  }
