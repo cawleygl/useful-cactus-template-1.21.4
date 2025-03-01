@@ -1,0 +1,12 @@
+// 1.21.4	-999999999-01-01T00:00:00	Useful Cactus/Tags for minecraft:block
+fdd08d8ad70285f4378b09052175dc131463cb88 data/minecraft/tags/block/fence_gates.json
+dfb7dcfa5046669e8ce8cd35399faf323e511d79 data/minecraft/tags/block/logs_that_burn.json
+a922e2e056e6b6210f191be093f5c3703c7036ee data/minecraft/tags/block/planks.json
+b8d8a2ad68329b4ff3a501045b8ca9bba9273427 data/minecraft/tags/block/wooden_buttons.json
+30a5e5a004093349f7365c6a95bef45a220a0945 data/minecraft/tags/block/wooden_doors.json
+58ed9dd585524c839105072c7d1cf559f9060a13 data/minecraft/tags/block/wooden_fences.json
+c2810bf1871b881a88ed6da5c2a685c70f03795d data/minecraft/tags/block/wooden_pressure_plates.json
+a66d49e9b47ad182ec423739271b9470617170f6 data/minecraft/tags/block/wooden_slabs.json
+d39a4f20f06bced847c94197311a88e0e6d407b5 data/minecraft/tags/block/wooden_stairs.json
+4bcb1ac7588b494bda1ea924bb460c7b6e9fad71 data/minecraft/tags/block/wooden_trapdoors.json
+5db3cd7e78c18afd9fcbe7c2ce77b70fa97081cc data/useful-cactus/tags/block/cactus_logs.json

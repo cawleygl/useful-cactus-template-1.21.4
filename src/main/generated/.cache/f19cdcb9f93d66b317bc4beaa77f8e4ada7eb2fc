@@ -1,0 +1,14 @@
+// 1.21.4	-999999999-01-01T00:00:00	Useful Cactus/Block Loot Tables
+d3a397fa758c435b9b4aef987c5d2b055867dffc data/useful-cactus/loot_table/blocks/cactus_button.json
+75ff7d36e3f870fcb240cb590e025fcd8930c562 data/useful-cactus/loot_table/blocks/cactus_door.json
+950eacccca4ef71cf1310b8444ad2c0f004ac242 data/useful-cactus/loot_table/blocks/cactus_fence.json
+48c15d910cbf3f7e938179a7d1590f6efbedc689 data/useful-cactus/loot_table/blocks/cactus_fence_gate.json
+2e18bd2875dfb183862f10908f8eb5e2e9223eb6 data/useful-cactus/loot_table/blocks/cactus_log.json
+da4746c74accaded2fa0cf765b8cd71b390ecbe8 data/useful-cactus/loot_table/blocks/cactus_planks.json
+711b54f6a9c9fc6384cb5eb3a7d5368281c69808 data/useful-cactus/loot_table/blocks/cactus_pressure_plate.json
+d03867685c74e3e9aab7a92138f879eeaa00f226 data/useful-cactus/loot_table/blocks/cactus_slab.json
+01b3e91769095875b09e5cbd761fa73e2c588353 data/useful-cactus/loot_table/blocks/cactus_stairs.json
+09ccbb13a752e6be346aaa9ead56ac0adf27c6de data/useful-cactus/loot_table/blocks/cactus_trapdoor.json
+362786dd6cdf486fe744a8f251c0649a7e626b17 data/useful-cactus/loot_table/blocks/cactus_wood.json
+5cb18f77fc4d534235c58b3448f83dff871ed9d9 data/useful-cactus/loot_table/blocks/stripped_cactus_log.json
+3ff080f05ea3670f7045438f8961a79f37e41d11 data/useful-cactus/loot_table/blocks/stripped_cactus_wood.json
