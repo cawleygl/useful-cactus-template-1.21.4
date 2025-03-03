@@ -1,10 +1,12 @@
 package bluesteel42.usefulcactus.block;
 
 import bluesteel42.usefulcactus.UsefulCactus;
+import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.block.piston.PistonBehavior;
+import net.minecraft.client.render.RenderLayer;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryKey;
@@ -104,7 +106,7 @@ public class ModBlocks {
                     .burnable()
     );
 
-    public static final Block CACTUS_DOOR = registerBlock(
+    public static final Block CACTUS_DOOR = registerNonOpaqueBlock(
             "cactus_door",
             settings -> new DoorBlock(BlockSetType.OAK, settings),
             AbstractBlock.Settings.create()
@@ -116,7 +118,7 @@ public class ModBlocks {
                     .pistonBehavior(PistonBehavior.DESTROY)
     );
 
-    public static final Block CACTUS_TRAPDOOR = registerBlock(
+    public static final Block CACTUS_TRAPDOOR = registerNonOpaqueBlock(
             "cactus_trapdoor",
             settings -> new TrapdoorBlock(BlockSetType.OAK, settings),
             AbstractBlock.Settings.create()
@@ -137,6 +139,19 @@ public class ModBlocks {
 
         return block;
 
+    }
+
+    private static Block registerNonOpaqueBlock(String path, Function<AbstractBlock.Settings, Block> factory, AbstractBlock.Settings settings) {
+        final Identifier identifier = Identifier.of(UsefulCactus.MOD_ID, path);
+        final RegistryKey<Block> registryKey = RegistryKey.of(RegistryKeys.BLOCK, identifier);
+
+        final Block block = Blocks.register(registryKey, factory, settings);
+
+        BlockRenderLayerMap.INSTANCE.putBlock(block, RenderLayer.getCutout());
+
+        Items.register(block);
+
+        return block;
     }
 
     public static void initialize() {
