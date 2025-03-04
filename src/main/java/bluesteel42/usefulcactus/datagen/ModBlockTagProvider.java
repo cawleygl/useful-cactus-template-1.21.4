@@ -39,6 +39,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.STANDING_SIGNS).add(ModBlocks.CACTUS_STANDING_SIGN);
         getOrCreateTagBuilder(BlockTags.WALL_SIGNS).add(ModBlocks.CACTUS_WALL_SIGN);
+        getOrCreateTagBuilder(BlockTags.CEILING_HANGING_SIGNS).add(ModBlocks.CACTUS_HANGING_SIGN);
         getOrCreateTagBuilder(BlockTags.WALL_HANGING_SIGNS).add(ModBlocks.CACTUS_WALL_HANGING_SIGN);
     }
 }
