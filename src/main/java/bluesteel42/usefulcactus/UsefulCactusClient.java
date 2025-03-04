@@ -7,6 +7,7 @@ import net.fabricmc.api.ClientModInitializer;
 public class UsefulCactusClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
+        // Register Boat Model
         TerraformBoatClientHelper.registerModelLayers(ModBoats.CACTUS_BOATS_ID);
     }
 }

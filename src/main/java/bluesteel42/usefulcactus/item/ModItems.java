@@ -23,9 +23,6 @@ public class ModItems {
     public static final Item CACTUS_SIGN = registerSignItem("cactus_sign");
     public static final Item CACTUS_HANGING_SIGN = registerHangingSignItem("cactus_hanging_sign");
 
-    public static final Item CACTUS_BOAT = registerBoatItem("cactus_boat", ModBoats.CACTUS_BOATS_ID, false, false);
-    public static final Item CACTUS_CHEST_BOAT = registerBoatItem("cactus_chest_boat", ModBoats.CACTUS_BOATS_ID, true, false);
-
     public static Item registerSignItem(String path) {
         final RegistryKey<Item> registryKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UsefulCactus.MOD_ID, path));
         final Item item = new SignItem(
@@ -68,18 +65,6 @@ public class ModItems {
 
     }
 
-    public static Item registerBoatItem(String path, Identifier boatId, boolean chest, boolean raft) {
-        final RegistryKey<Item> registryKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UsefulCactus.MOD_ID, path));
-        return TerraformBoatItemHelper.registerBoatItem(
-                boatId,
-                new Item.Settings().maxCount(1).registryKey(registryKey),
-                chest,
-                raft
-        );
-    }
-
-
-
     public static void initialize() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK)
                 .register((itemGroup) -> {
@@ -93,13 +78,6 @@ public class ModItems {
                     itemGroup.addAfter(Items.BAMBOO_HANGING_SIGN, ModItems.CACTUS_HANGING_SIGN);
                     itemGroup.addAfter(Items.BAMBOO_HANGING_SIGN, ModItems.CACTUS_SIGN);
                 });
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS)
-                .register((itemGroup) -> {
-                    itemGroup.addAfter(Items.BAMBOO_CHEST_RAFT, ModItems.CACTUS_CHEST_BOAT);
-                    itemGroup.addAfter(Items.BAMBOO_CHEST_RAFT, ModItems.CACTUS_BOAT);
-                });
-
 
     }
 }

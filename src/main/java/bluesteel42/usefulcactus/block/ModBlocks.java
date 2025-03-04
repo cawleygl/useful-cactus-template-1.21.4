@@ -148,37 +148,27 @@ public class ModBlocks {
     public static final Block CACTUS_STANDING_SIGN = registerBlockWithoutItem(
             "cactus_standing_sign",
             settings -> new TerraformSignBlock(CACTUS_SIGN_TEXTURE, settings),
-            AbstractBlock.Settings.create()
+            AbstractBlock.Settings.copy(Blocks.OAK_SIGN)
                     .mapColor(MapColor.PALE_GREEN)
-                    .solid()
-                    .instrument(NoteBlockInstrument.BASS)
-                    .noCollision()
-                    .strength(1.0F)
-                    .burnable()
     );
 
     public static final Block CACTUS_WALL_SIGN = registerBlockWithoutItem(
             "cactus_wall_sign",
             settings -> new TerraformWallSignBlock(CACTUS_SIGN_TEXTURE, settings),
-            AbstractBlock.Settings.create().lootTable(CACTUS_STANDING_SIGN.getLootTableKey()).overrideTranslationKey(CACTUS_STANDING_SIGN.getTranslationKey())
+            AbstractBlock.Settings.copy(Blocks.OAK_SIGN).lootTable(CACTUS_STANDING_SIGN.getLootTableKey()).overrideTranslationKey(CACTUS_STANDING_SIGN.getTranslationKey())
     );
 
     public static final Block CACTUS_HANGING_SIGN = registerBlockWithoutItem(
             "cactus_hanging_sign",
             settings -> new TerraformHangingSignBlock(CACTUS_HANGING_SIGN_TEXTURE, CACTUS_HANGING_GUI_SIGN_TEXTURE, settings),
-            AbstractBlock.Settings.create()
+            AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN)
                     .mapColor(MapColor.PALE_GREEN)
-                    .solid()
-                    .instrument(NoteBlockInstrument.BASS)
-                    .noCollision()
-                    .strength(1.0F)
-                    .burnable()
     );
 
     public static final Block CACTUS_WALL_HANGING_SIGN = registerBlockWithoutItem(
             "cactus_hanging_wall_sign",
             settings -> new TerraformWallHangingSignBlock(CACTUS_HANGING_SIGN_TEXTURE, CACTUS_HANGING_GUI_SIGN_TEXTURE, settings),
-            AbstractBlock.Settings.create().lootTable(CACTUS_HANGING_SIGN.getLootTableKey()).overrideTranslationKey(CACTUS_HANGING_SIGN.getTranslationKey())
+            AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN).lootTable(CACTUS_HANGING_SIGN.getLootTableKey()).overrideTranslationKey(CACTUS_HANGING_SIGN.getTranslationKey())
     );
 
     public static final BlockFamily CACTUS_SIGN_FAMILY = BlockFamilies.register(ModBlocks.CACTUS_PLANKS)
