@@ -1,7 +1,11 @@
 // 1.21.4	-999999999-01-01T00:00:00	Useful Cactus/Tags for minecraft:item
+a485997ff99f3082484f58e65343996375e72851 data/minecraft/tags/item/boats.json
+65d9da8fcaf9b4247a2d3d2e26d0e082e448fdac data/minecraft/tags/item/chest_boats.json
 fdd08d8ad70285f4378b09052175dc131463cb88 data/minecraft/tags/item/fence_gates.json
+b342de9e1ba4964a20c9c6a37d32dd1049922d75 data/minecraft/tags/item/hanging_signs.json
 dfb7dcfa5046669e8ce8cd35399faf323e511d79 data/minecraft/tags/item/logs_that_burn.json
 a922e2e056e6b6210f191be093f5c3703c7036ee data/minecraft/tags/item/planks.json
+d7f7639d7aaa548d26406f8d2697ceebe64b1995 data/minecraft/tags/item/signs.json
 b8d8a2ad68329b4ff3a501045b8ca9bba9273427 data/minecraft/tags/item/wooden_buttons.json
 30a5e5a004093349f7365c6a95bef45a220a0945 data/minecraft/tags/item/wooden_doors.json
 58ed9dd585524c839105072c7d1cf559f9060a13 data/minecraft/tags/item/wooden_fences.json

@@ -1,5 +1,6 @@
 package bluesteel42.usefulcactus;
 
+import bluesteel42.usefulcactus.entity.ModBoats;
 import bluesteel42.usefulcactus.item.ModItems;
 import bluesteel42.usefulcactus.block.ModBlocks;
 import bluesteel42.usefulcactus.registries.ModRegistries;
@@ -23,6 +24,7 @@ public class UsefulCactus implements ModInitializer {
 		// Proceed with mild caution.
 		ModBlocks.initialize();
 		ModItems.initialize();
+		ModBoats.initialize();
 		ModRegistries.registerStrippables();
 		ModRegistries.registerCompostables();
 

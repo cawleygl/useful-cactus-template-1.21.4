@@ -2,6 +2,9 @@
 fdd08d8ad70285f4378b09052175dc131463cb88 data/minecraft/tags/block/fence_gates.json
 dfb7dcfa5046669e8ce8cd35399faf323e511d79 data/minecraft/tags/block/logs_that_burn.json
 a922e2e056e6b6210f191be093f5c3703c7036ee data/minecraft/tags/block/planks.json
+c391ec0296da1da0a40caaa8e6cb5f59d56dcf45 data/minecraft/tags/block/standing_signs.json
+9ef7b3a1ccea65760ef5aaf8ca88d0e8f33feea5 data/minecraft/tags/block/wall_hanging_signs.json
+55859776b9f33ffc582d5d2c74bee9c1aa60b786 data/minecraft/tags/block/wall_signs.json
 b8d8a2ad68329b4ff3a501045b8ca9bba9273427 data/minecraft/tags/block/wooden_buttons.json
 30a5e5a004093349f7365c6a95bef45a220a0945 data/minecraft/tags/block/wooden_doors.json
 58ed9dd585524c839105072c7d1cf559f9060a13 data/minecraft/tags/block/wooden_fences.json

@@ -1,6 +1,8 @@
 package bluesteel42.usefulcactus.datagen;
 
 import bluesteel42.usefulcactus.block.ModBlocks;
+import bluesteel42.usefulcactus.entity.ModBoats;
+import bluesteel42.usefulcactus.item.ModItems;
 import bluesteel42.usefulcactus.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
@@ -33,5 +35,11 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.FENCE_GATES).add(ModBlocks.CACTUS_FENCE_GATE.asItem());
         getOrCreateTagBuilder(ItemTags.WOODEN_BUTTONS).add(ModBlocks.CACTUS_BUTTON.asItem());
         getOrCreateTagBuilder(ItemTags.WOODEN_PRESSURE_PLATES).add(ModBlocks.CACTUS_PRESSURE_PLATE.asItem());
+
+        getOrCreateTagBuilder(ItemTags.SIGNS).add(ModItems.CACTUS_SIGN);
+        getOrCreateTagBuilder(ItemTags.HANGING_SIGNS).add(ModItems.CACTUS_HANGING_SIGN);
+
+        getOrCreateTagBuilder(ItemTags.BOATS).add(ModBoats.CACTUS_BOAT.asItem());
+        getOrCreateTagBuilder(ItemTags.CHEST_BOATS).add(ModBoats.CACTUS_CHEST_BOAT.asItem());
     }
 }
