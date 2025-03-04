@@ -1,12 +1,18 @@
 package bluesteel42.usefulcactus.block;
 
 import bluesteel42.usefulcactus.UsefulCactus;
+import com.terraformersmc.terraform.sign.api.block.TerraformSignBlock;
+import com.terraformersmc.terraform.sign.api.block.TerraformWallHangingSignBlock;
+import com.terraformersmc.terraform.sign.api.block.TerraformWallSignBlock;
+import com.terraformersmc.terraform.sign.api.block.TerraformHangingSignBlock;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.client.render.RenderLayer;
+import net.minecraft.data.family.BlockFamilies;
+import net.minecraft.data.family.BlockFamily;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryKey;
@@ -44,7 +50,7 @@ public class ModBlocks {
             AbstractBlock.Settings.create()
                     .mapColor(MapColor.PALE_GREEN)
                     .instrument(NoteBlockInstrument.BASS)
-                    .strength(2.0F)
+                    .strength(2.0F, 3.0F)
                     .sounds(BlockSoundGroup.WOOD)
                     .burnable()
     );
@@ -58,7 +64,12 @@ public class ModBlocks {
     public static final Block CACTUS_SLAB = registerBlock(
             "cactus_slab",
             SlabBlock::new,
-            AbstractBlock.Settings.copy(CACTUS_PLANKS)
+            AbstractBlock.Settings.create()
+                    .mapColor(MapColor.PALE_GREEN)
+                    .instrument(NoteBlockInstrument.BASS)
+                    .strength(2.0F, 3.0F)
+                    .sounds(BlockSoundGroup.WOOD)
+                    .burnable()
     );
 
     public static final Block CACTUS_BUTTON = registerBlock(
@@ -66,7 +77,7 @@ public class ModBlocks {
             settings -> new ButtonBlock(BlockSetType.OAK, 30, settings),
             AbstractBlock.Settings.create()
                     .noCollision()
-                    .strength(2.0F)
+                    .strength(0.5F)
                     .pistonBehavior(PistonBehavior.DESTROY)
     );
 
@@ -78,7 +89,7 @@ public class ModBlocks {
                     .solid()
                     .instrument(NoteBlockInstrument.BASS)
                     .noCollision()
-                    .strength(2.0F)
+                    .strength(0.5F)
                     .burnable()
                     .pistonBehavior(PistonBehavior.DESTROY)
     );
@@ -90,7 +101,7 @@ public class ModBlocks {
                     .mapColor(MapColor.PALE_GREEN)
                     .solid()
                     .instrument(NoteBlockInstrument.BASS)
-                    .strength(2.0F)
+                    .strength(2.0F, 3.0F)
                     .sounds(BlockSoundGroup.WOOD)
                     .burnable()
     );
@@ -102,7 +113,7 @@ public class ModBlocks {
                     .mapColor(MapColor.PALE_GREEN)
                     .solid()
                     .instrument(NoteBlockInstrument.BASS)
-                    .strength(2.0F)
+                    .strength(2.0F, 3.0F)
                     .burnable()
     );
 
@@ -112,7 +123,7 @@ public class ModBlocks {
             AbstractBlock.Settings.create()
                     .mapColor(MapColor.PALE_GREEN)
                     .instrument(NoteBlockInstrument.BASS)
-                    .strength(2.0F)
+                    .strength(3.0F)
                     .nonOpaque()
                     .burnable()
                     .pistonBehavior(PistonBehavior.DESTROY)
@@ -124,11 +135,59 @@ public class ModBlocks {
             AbstractBlock.Settings.create()
                     .mapColor(MapColor.PALE_GREEN)
                     .instrument(NoteBlockInstrument.BASS)
-                    .strength(2.0F)
+                    .strength(3.0F)
                     .nonOpaque()
                     .allowsSpawning(Blocks::never)
                     .burnable()
     );
+
+    public static final Identifier CACTUS_SIGN_TEXTURE = Identifier.of(UsefulCactus.MOD_ID, "entity/signs/cactus");
+    public static final Identifier CACTUS_HANGING_SIGN_TEXTURE = Identifier.of(UsefulCactus.MOD_ID, "entity/signs/hanging/cactus");
+    public static final Identifier CACTUS_HANGING_GUI_SIGN_TEXTURE = Identifier.of(UsefulCactus.MOD_ID, "textures/gui/hanging_signs/cactus");
+
+    public static final Block CACTUS_STANDING_SIGN = registerBlockWithoutItem(
+            "cactus_standing_sign",
+            settings -> new TerraformSignBlock(CACTUS_SIGN_TEXTURE, settings),
+            AbstractBlock.Settings.create()
+                    .mapColor(MapColor.PALE_GREEN)
+                    .solid()
+                    .instrument(NoteBlockInstrument.BASS)
+                    .noCollision()
+                    .strength(1.0F)
+                    .burnable()
+    );
+
+    public static final Block CACTUS_WALL_SIGN = registerBlockWithoutItem(
+            "cactus_wall_sign",
+            settings -> new TerraformWallSignBlock(CACTUS_SIGN_TEXTURE, settings),
+            AbstractBlock.Settings.create().lootTable(CACTUS_STANDING_SIGN.getLootTableKey()).overrideTranslationKey(CACTUS_STANDING_SIGN.getTranslationKey())
+    );
+
+    public static final Block CACTUS_HANGING_SIGN = registerBlockWithoutItem(
+            "cactus_hanging_sign",
+            settings -> new TerraformHangingSignBlock(CACTUS_HANGING_SIGN_TEXTURE, CACTUS_HANGING_GUI_SIGN_TEXTURE, settings),
+            AbstractBlock.Settings.create()
+                    .mapColor(MapColor.PALE_GREEN)
+                    .solid()
+                    .instrument(NoteBlockInstrument.BASS)
+                    .noCollision()
+                    .strength(1.0F)
+                    .burnable()
+    );
+
+    public static final Block CACTUS_WALL_HANGING_SIGN = registerBlockWithoutItem(
+            "cactus_hanging_wall_sign",
+            settings -> new TerraformWallHangingSignBlock(CACTUS_HANGING_SIGN_TEXTURE, CACTUS_HANGING_GUI_SIGN_TEXTURE, settings),
+            AbstractBlock.Settings.create().lootTable(CACTUS_HANGING_SIGN.getLootTableKey()).overrideTranslationKey(CACTUS_HANGING_SIGN.getTranslationKey())
+    );
+
+    public static final BlockFamily CACTUS_SIGN_FAMILY = BlockFamilies.register(ModBlocks.CACTUS_PLANKS)
+            .sign(ModBlocks.CACTUS_STANDING_SIGN, ModBlocks.CACTUS_WALL_SIGN)
+            .group("wooden").unlockCriterionName("has_planks").build();
+
+    public static final BlockFamily CACTUS_HANGING_SIGN_FAMILY = BlockFamilies.register(ModBlocks.STRIPPED_CACTUS_LOG)
+            .sign(ModBlocks.CACTUS_HANGING_SIGN, ModBlocks.CACTUS_WALL_HANGING_SIGN)
+            .group("wooden").unlockCriterionName("has_planks").build();
 
     private static Block registerBlock(String path, Function<AbstractBlock.Settings, Block> factory, AbstractBlock.Settings settings) {
         final Identifier identifier = Identifier.of(UsefulCactus.MOD_ID, path);
@@ -138,7 +197,6 @@ public class ModBlocks {
         Items.register(block);
 
         return block;
-
     }
 
     private static Block registerNonOpaqueBlock(String path, Function<AbstractBlock.Settings, Block> factory, AbstractBlock.Settings settings) {
@@ -152,6 +210,13 @@ public class ModBlocks {
         Items.register(block);
 
         return block;
+    }
+
+    private static Block registerBlockWithoutItem(String path, Function<AbstractBlock.Settings, Block> factory, AbstractBlock.Settings settings) {
+        final Identifier identifier = Identifier.of(UsefulCactus.MOD_ID, path);
+        final RegistryKey<Block> registryKey = RegistryKey.of(RegistryKeys.BLOCK, identifier);
+
+        return Blocks.register(registryKey, factory, settings);
     }
 
     public static void initialize() {
@@ -171,5 +236,6 @@ public class ModBlocks {
                     itemGroup.addAfter(Items.BAMBOO_BUTTON, ModBlocks.CACTUS_WOOD);
                     itemGroup.addAfter(Items.BAMBOO_BUTTON, ModBlocks.CACTUS_LOG);
                 });
+
     }
 }
