@@ -2,9 +2,6 @@ package bluesteel42.usefulcactus.item;
 
 import bluesteel42.usefulcactus.UsefulCactus;
 import bluesteel42.usefulcactus.block.ModBlocks;
-import bluesteel42.usefulcactus.entity.ModBoats;
-import com.terraformersmc.terraform.boat.api.item.TerraformBoatItemHelper;
-import com.terraformersmc.terraform.boat.impl.item.TerraformBoatItemHelperImpl;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.component.type.FoodComponent;
 import net.minecraft.item.*;
