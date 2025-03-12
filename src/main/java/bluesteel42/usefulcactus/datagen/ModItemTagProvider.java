@@ -7,6 +7,7 @@ import bluesteel42.usefulcactus.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.ItemTags;
 
 import java.util.concurrent.CompletableFuture;
@@ -18,28 +19,26 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-        getOrCreateTagBuilder(ModTags.Items.CACTUS_LOGS)
-                .add(ModBlocks.CACTUS_LOG.asItem())
-                .add(ModBlocks.CACTUS_WOOD.asItem())
-                .add(ModBlocks.STRIPPED_CACTUS_LOG.asItem())
-                .add(ModBlocks.STRIPPED_CACTUS_WOOD.asItem());
+        getOrCreateTagBuilder(ModTags.Items.CHOLLA_BLOCKS)
+                .add(ModBlocks.CHOLLA_BLOCK.asItem())
+                .add(ModBlocks.STRIPPED_CHOLLA_BLOCK.asItem());
 
-        getOrCreateTagBuilder(ItemTags.LOGS_THAT_BURN).addOptionalTag(ModTags.Items.CACTUS_LOGS);
+        getOrCreateTagBuilder(ItemTags.PLANKS).add(ModBlocks.CHOLLA_PLANKS.asItem());
+        getOrCreateTagBuilder(ItemTags.WOODEN_STAIRS).add(ModBlocks.CHOLLA_STAIRS.asItem());
+        getOrCreateTagBuilder(ItemTags.STAIRS).add(ModBlocks.CHOLLA_MOSAIC_STAIRS.asItem());
+        getOrCreateTagBuilder(ItemTags.WOODEN_SLABS).add(ModBlocks.CHOLLA_SLAB.asItem());
+        getOrCreateTagBuilder(ItemTags.SLABS).add(ModBlocks.CHOLLA_MOSAIC_SLAB.asItem());
+        getOrCreateTagBuilder(ItemTags.WOODEN_DOORS).add(ModBlocks.CHOLLA_DOOR.asItem());
+        getOrCreateTagBuilder(ItemTags.WOODEN_TRAPDOORS).add(ModBlocks.CHOLLA_TRAPDOOR.asItem());
+        getOrCreateTagBuilder(ItemTags.WOODEN_FENCES).add(ModBlocks.CHOLLA_FENCE.asItem());
+        getOrCreateTagBuilder(ItemTags.FENCE_GATES).add(ModBlocks.CHOLLA_FENCE_GATE.asItem());
+        getOrCreateTagBuilder(ItemTags.WOODEN_BUTTONS).add(ModBlocks.CHOLLA_BUTTON.asItem());
+        getOrCreateTagBuilder(ItemTags.WOODEN_PRESSURE_PLATES).add(ModBlocks.CHOLLA_PRESSURE_PLATE.asItem());
 
-        getOrCreateTagBuilder(ItemTags.PLANKS).add(ModBlocks.CACTUS_PLANKS.asItem());
-        getOrCreateTagBuilder(ItemTags.WOODEN_STAIRS).add(ModBlocks.CACTUS_STAIRS.asItem());
-        getOrCreateTagBuilder(ItemTags.WOODEN_SLABS).add(ModBlocks.CACTUS_SLAB.asItem());
-        getOrCreateTagBuilder(ItemTags.WOODEN_DOORS).add(ModBlocks.CACTUS_DOOR.asItem());
-        getOrCreateTagBuilder(ItemTags.WOODEN_TRAPDOORS).add(ModBlocks.CACTUS_TRAPDOOR.asItem());
-        getOrCreateTagBuilder(ItemTags.WOODEN_FENCES).add(ModBlocks.CACTUS_FENCE.asItem());
-        getOrCreateTagBuilder(ItemTags.FENCE_GATES).add(ModBlocks.CACTUS_FENCE_GATE.asItem());
-        getOrCreateTagBuilder(ItemTags.WOODEN_BUTTONS).add(ModBlocks.CACTUS_BUTTON.asItem());
-        getOrCreateTagBuilder(ItemTags.WOODEN_PRESSURE_PLATES).add(ModBlocks.CACTUS_PRESSURE_PLATE.asItem());
+        getOrCreateTagBuilder(ItemTags.SIGNS).add(ModItems.CHOLLA_SIGN);
+        getOrCreateTagBuilder(ItemTags.HANGING_SIGNS).add(ModItems.CHOLLA_HANGING_SIGN);
 
-        getOrCreateTagBuilder(ItemTags.SIGNS).add(ModItems.CACTUS_SIGN);
-        getOrCreateTagBuilder(ItemTags.HANGING_SIGNS).add(ModItems.CACTUS_HANGING_SIGN);
-
-        getOrCreateTagBuilder(ItemTags.BOATS).add(ModBoats.CACTUS_BOAT.asItem());
-        getOrCreateTagBuilder(ItemTags.CHEST_BOATS).add(ModBoats.CACTUS_CHEST_BOAT.asItem());
+        getOrCreateTagBuilder(ItemTags.BOATS).add(ModBoats.CHOLLA_RAFT.asItem());
+        getOrCreateTagBuilder(ItemTags.CHEST_BOATS).add(ModBoats.CHOLLA_CHEST_RAFT.asItem());
     }
 }

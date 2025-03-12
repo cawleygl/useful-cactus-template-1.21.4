@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column_horizontal",
-  "textures": {
-    "end": "useful-cactus:block/stripped_cactus_log_top",
-    "side": "useful-cactus:block/stripped_cactus_log"
-  }
-}

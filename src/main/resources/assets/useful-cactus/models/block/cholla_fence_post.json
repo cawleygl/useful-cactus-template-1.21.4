@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/custom_fence_post",
+  "textures": {
+    "particle": "useful-cactus:block/cholla_fence_particle",
+    "texture": "useful-cactus:block/cholla_fence"
+  }
+}

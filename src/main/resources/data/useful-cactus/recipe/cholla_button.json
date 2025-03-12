@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "wooden_button",
+  "ingredients": [
+    "useful-cactus:cholla_planks"
+  ],
+  "result": {
+    "count": 1,
+    "id": "useful-cactus:cholla_button"
+  }
+}

@@ -14,25 +14,27 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
-        addDrop(ModBlocks.CACTUS_LOG);
-        addDrop(ModBlocks.CACTUS_WOOD);
-        addDrop(ModBlocks.STRIPPED_CACTUS_LOG);
-        addDrop(ModBlocks.STRIPPED_CACTUS_WOOD);
+        addDrop(ModBlocks.CHOLLA_BLOCK);
+        addDrop(ModBlocks.STRIPPED_CHOLLA_BLOCK);
+        addDrop(ModBlocks.DRIED_CHOLLA);
 
-        addDrop(ModBlocks.CACTUS_PLANKS);
-        addDrop(ModBlocks.CACTUS_STAIRS);
-        addDrop(ModBlocks.CACTUS_BUTTON);
-        addDrop(ModBlocks.CACTUS_FENCE_GATE);
-        addDrop(ModBlocks.CACTUS_FENCE);
-        addDrop(ModBlocks.CACTUS_PRESSURE_PLATE);
-        addDrop(ModBlocks.CACTUS_TRAPDOOR);
-        addDrop(ModBlocks.CACTUS_DOOR, doorDrops(ModBlocks.CACTUS_DOOR));
-        addDrop(ModBlocks.CACTUS_SLAB, slabDrops(ModBlocks.CACTUS_SLAB));
+        addDrop(ModBlocks.CHOLLA_PLANKS);
+        addDrop(ModBlocks.CHOLLA_MOSAIC);
+        addDrop(ModBlocks.CHOLLA_STAIRS);
+        addDrop(ModBlocks.CHOLLA_MOSAIC_STAIRS);
+        addDrop(ModBlocks.CHOLLA_BUTTON);
+        addDrop(ModBlocks.CHOLLA_FENCE_GATE);
+        addDrop(ModBlocks.CHOLLA_FENCE);
+        addDrop(ModBlocks.CHOLLA_PRESSURE_PLATE);
+        addDrop(ModBlocks.CHOLLA_TRAPDOOR);
+        addDrop(ModBlocks.CHOLLA_DOOR, doorDrops(ModBlocks.CHOLLA_DOOR));
+        addDrop(ModBlocks.CHOLLA_SLAB, slabDrops(ModBlocks.CHOLLA_SLAB));
+        addDrop(ModBlocks.CHOLLA_MOSAIC_SLAB, slabDrops(ModBlocks.CHOLLA_MOSAIC_SLAB));
 
-        addDrop(ModBlocks.CACTUS_STANDING_SIGN);
-        addDrop(ModBlocks.CACTUS_WALL_SIGN);
-        addDrop(ModBlocks.CACTUS_HANGING_SIGN);
-        addDrop(ModBlocks.CACTUS_WALL_HANGING_SIGN);
+        addDrop(ModBlocks.CHOLLA_STANDING_SIGN);
+        addDrop(ModBlocks.CHOLLA_WALL_SIGN);
+        addDrop(ModBlocks.CHOLLA_HANGING_SIGN);
+        addDrop(ModBlocks.CHOLLA_WALL_HANGING_SIGN);
 
     }
 }

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "useful-cactus:dried_cholla",
+    "useful-cactus:dried_cholla",
+    "useful-cactus:dried_cholla",
+    "useful-cactus:dried_cholla",
+    "useful-cactus:dried_cholla",
+    "useful-cactus:dried_cholla",
+    "useful-cactus:dried_cholla",
+    "useful-cactus:dried_cholla",
+    "useful-cactus:dried_cholla"
+  ],
+  "result": {
+    "count": 1,
+    "id": "useful-cactus:cholla_block"
+  }
+}

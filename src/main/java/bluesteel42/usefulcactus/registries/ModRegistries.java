@@ -7,8 +7,7 @@ import bluesteel42.usefulcactus.block.ModBlocks;
 
 public class ModRegistries {
     public static void registerStrippables() {
-        StrippableBlockRegistry.register(ModBlocks.CACTUS_LOG, ModBlocks.STRIPPED_CACTUS_LOG);
-        StrippableBlockRegistry.register(ModBlocks.CACTUS_WOOD, ModBlocks.STRIPPED_CACTUS_WOOD);
+        StrippableBlockRegistry.register(ModBlocks.CHOLLA_BLOCK, ModBlocks.STRIPPED_CHOLLA_BLOCK);
     }
 
     public static void registerCompostables() {

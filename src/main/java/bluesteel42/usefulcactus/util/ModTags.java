@@ -9,7 +9,7 @@ import net.minecraft.util.Identifier;
 
 public class ModTags {
     public static class Blocks {
-        public static final TagKey<Block> CACTUS_LOGS = createTag("cactus_logs");
+        public static final TagKey<Block> CHOLLA_BLOCKS = createTag("cholla_blocks");
 
         public static TagKey<Block> createTag(String name) {
             return TagKey.of(RegistryKeys.BLOCK, Identifier.of(UsefulCactus.MOD_ID, name));
@@ -17,7 +17,7 @@ public class ModTags {
     }
 
     public static class Items {
-        public static final TagKey<Item> CACTUS_LOGS = createTag("cactus_logs");
+        public static final TagKey<Item> CHOLLA_BLOCKS = createTag("cholla_blocks");
 
         public static TagKey<Item> createTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, Identifier.of(UsefulCactus.MOD_ID, name));

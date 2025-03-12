@@ -11,10 +11,10 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 
 public class ModBoats {
-    public static final Identifier CACTUS_BOATS_ID = Identifier.of(UsefulCactus.MOD_ID, "cactus");
+    public static final Identifier CHOLLA_RAFTS_ID = Identifier.of(UsefulCactus.MOD_ID, "cholla");
 
-    public static final Item CACTUS_BOAT = registerBoatItem("cactus_boat", ModBoats.CACTUS_BOATS_ID, false, false);
-    public static final Item CACTUS_CHEST_BOAT = registerBoatItem("cactus_chest_boat", ModBoats.CACTUS_BOATS_ID, true, false);
+    public static final Item CHOLLA_RAFT = registerBoatItem("cholla_raft", ModBoats.CHOLLA_RAFTS_ID, false, true);
+    public static final Item CHOLLA_CHEST_RAFT = registerBoatItem("cholla_chest_raft", ModBoats.CHOLLA_RAFTS_ID, true, true);
 
     public static Item registerBoatItem(String path, Identifier boatId, boolean chest, boolean raft) {
         final RegistryKey<Item> registryKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UsefulCactus.MOD_ID, path));
@@ -29,8 +29,8 @@ public class ModBoats {
     public static void initialize() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS)
                 .register((itemGroup) -> {
-                    itemGroup.addAfter(Items.BAMBOO_CHEST_RAFT, ModBoats.CACTUS_CHEST_BOAT);
-                    itemGroup.addAfter(Items.BAMBOO_CHEST_RAFT, ModBoats.CACTUS_BOAT);
+                    itemGroup.addAfter(Items.BAMBOO_CHEST_RAFT, ModBoats.CHOLLA_CHEST_RAFT);
+                    itemGroup.addAfter(Items.BAMBOO_CHEST_RAFT, ModBoats.CHOLLA_RAFT);
                 });
 
     }

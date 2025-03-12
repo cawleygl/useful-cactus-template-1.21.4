@@ -8,6 +8,6 @@ public class UsefulCactusClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         // Register Boat Model
-        TerraformBoatClientHelper.registerModelLayers(ModBoats.CACTUS_BOATS_ID);
+        TerraformBoatClientHelper.registerModelLayers(ModBoats.CHOLLA_RAFTS_ID);
     }
 }

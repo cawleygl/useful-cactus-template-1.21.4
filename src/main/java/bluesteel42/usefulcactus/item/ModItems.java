@@ -17,14 +17,14 @@ public class ModItems {
     public static final Item COOKED_CACTUS_PAD = registerFoodItem("cooked_cactus_pad", 4, 0.3F);
     public static final Item CACTUS_SALAD = registerStew("cactus_salad", 6);
 
-    public static final Item CACTUS_SIGN = registerSignItem("cactus_sign");
-    public static final Item CACTUS_HANGING_SIGN = registerHangingSignItem("cactus_hanging_sign");
+    public static final Item CHOLLA_SIGN = registerSignItem("cholla_sign");
+    public static final Item CHOLLA_HANGING_SIGN = registerHangingSignItem("cholla_hanging_sign");
 
     public static Item registerSignItem(String path) {
         final RegistryKey<Item> registryKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UsefulCactus.MOD_ID, path));
         final Item item = new SignItem(
-                ModBlocks.CACTUS_STANDING_SIGN,
-                ModBlocks.CACTUS_WALL_SIGN,
+                ModBlocks.CHOLLA_STANDING_SIGN,
+                ModBlocks.CHOLLA_WALL_SIGN,
                 new Item.Settings().registryKey(registryKey).maxCount(16));
 
         return Registry.register(Registries.ITEM, registryKey.getValue(), item);
@@ -33,8 +33,8 @@ public class ModItems {
     public static Item registerHangingSignItem(String path) {
         final RegistryKey<Item> registryKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UsefulCactus.MOD_ID, path));
         final Item item = new HangingSignItem(
-                ModBlocks.CACTUS_HANGING_SIGN,
-                ModBlocks.CACTUS_WALL_HANGING_SIGN,
+                ModBlocks.CHOLLA_HANGING_SIGN,
+                ModBlocks.CHOLLA_WALL_HANGING_SIGN,
                 new Item.Settings().registryKey(registryKey).maxCount(16));
 
         return Registry.register(Registries.ITEM, registryKey.getValue(), item);
@@ -72,8 +72,8 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL)
                 .register((itemGroup) -> {
-                    itemGroup.addAfter(Items.BAMBOO_HANGING_SIGN, ModItems.CACTUS_HANGING_SIGN);
-                    itemGroup.addAfter(Items.BAMBOO_HANGING_SIGN, ModItems.CACTUS_SIGN);
+                    itemGroup.addAfter(Items.BAMBOO_HANGING_SIGN, ModItems.CHOLLA_HANGING_SIGN);
+                    itemGroup.addAfter(Items.BAMBOO_HANGING_SIGN, ModItems.CHOLLA_SIGN);
                 });
 
     }

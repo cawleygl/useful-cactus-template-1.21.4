@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "useful-cactus:block/cactus_planks",
-    "side": "useful-cactus:block/cactus_planks",
-    "top": "useful-cactus:block/cactus_planks"
-  }
-}
