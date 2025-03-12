@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "useful-cactus:block/cholla_pressure_plate"
+    },
+    "powered=true": {
+      "model": "useful-cactus:block/cholla_pressure_plate_down"
+    }
+  }
+}

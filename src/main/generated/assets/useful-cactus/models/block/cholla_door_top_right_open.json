@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_right_open",
+  "textures": {
+    "bottom": "useful-cactus:block/cholla_door_bottom",
+    "top": "useful-cactus:block/cholla_door_top"
+  }
+}

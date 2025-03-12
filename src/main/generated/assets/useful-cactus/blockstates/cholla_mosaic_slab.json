@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "useful-cactus:block/cholla_mosaic_slab"
+    },
+    "type=double": {
+      "model": "useful-cactus:block/cholla_mosaic"
+    },
+    "type=top": {
+      "model": "useful-cactus:block/cholla_mosaic_slab_top"
+    }
+  }
+}
