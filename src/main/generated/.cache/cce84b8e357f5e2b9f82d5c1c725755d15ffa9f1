@@ -1,7 +1,8 @@
 // 1.21.4	-999999999-01-01T00:00:00	Useful Cactus/Tags for minecraft:block
+c2d7a00a03924f7a22b07bd83c3db65e80e219f8 data/minecraft/tags/block/bamboo_blocks.json
 efee7143682c4b4e1a217ba39aee4a4e255e8c7c data/minecraft/tags/block/ceiling_hanging_signs.json
 3b91c41c0e64c0ea1439b0a884d9d8ab10260944 data/minecraft/tags/block/fence_gates.json
-cc8f24d22053610526b7fc1e12f163bdaa37ba1c data/minecraft/tags/block/mineable/axe.json
+46ec40d91da053f865b447f98e50844c1095be4a data/minecraft/tags/block/mineable/axe.json
 c2b79ee3f34053e5fe72c2ad3f613a39e1b161d4 data/minecraft/tags/block/planks.json
 f01217e41ee280361a9098af8c10cde7615bb54a data/minecraft/tags/block/slabs.json
 a65b8f076609f8c318d2ca85891481938103664c data/minecraft/tags/block/stairs.json
@@ -15,4 +16,3 @@ a9753ccbd62e12a181c1e846575901e1f570c13b data/minecraft/tags/block/wooden_pressu
 930e3d81aae1210fc20b7ee697e0bc7a2ac6f8d7 data/minecraft/tags/block/wooden_slabs.json
 f7a4a140ef411a7b33e77d7f04bd860f9b7e8a5f data/minecraft/tags/block/wooden_stairs.json
 37d63a730c8fa6ca10b5d0f6bb60aa63516e1927 data/minecraft/tags/block/wooden_trapdoors.json
-c2d7a00a03924f7a22b07bd83c3db65e80e219f8 data/useful-cactus/tags/block/cholla_blocks.json
