@@ -13,9 +13,6 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        blockStateModelGenerator.registerLog(ModBlocks.CHOLLA_BLOCK).log(ModBlocks.CHOLLA_BLOCK);
-        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_CHOLLA_BLOCK).log(ModBlocks.STRIPPED_CHOLLA_BLOCK);
-
         BlockStateModelGenerator.BlockTexturePool chollaPlankPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CHOLLA_PLANKS);
         chollaPlankPool.stairs(ModBlocks.CHOLLA_STAIRS);
         chollaPlankPool.slab(ModBlocks.CHOLLA_SLAB);

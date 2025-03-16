@@ -19,10 +19,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-        getOrCreateTagBuilder(BlockTags.BAMBOO_BLOCKS)
+        getOrCreateTagBuilder(ModTags.Blocks.CHOLLA_BLOCKS)
                 .add(ModBlocks.CHOLLA_BLOCK)
                 .add(ModBlocks.STRIPPED_CHOLLA_BLOCK);
 
+        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE).addTag(ModTags.Blocks.CHOLLA_BLOCKS);
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE).add(ModBlocks.DRIED_CHOLLA);
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE).add(ModBlocks.CHOLLA_MOSAIC);
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE).add(ModBlocks.CHOLLA_MOSAIC_STAIRS);

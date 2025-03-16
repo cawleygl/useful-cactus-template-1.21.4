@@ -1,5 +1,4 @@
 // 1.21.4	-999999999-01-01T00:00:00	Useful Cactus/Model Definitions
-7e9170a3a9a22ed6912b25f0338e5f544de0a9ab assets/useful-cactus/blockstates/cholla_block.json
 3e712048534f6805b040d11a89314ca67329e8c2 assets/useful-cactus/blockstates/cholla_button.json
 ed6eaf922022d3e9793963369ad1568f408a3f4e assets/useful-cactus/blockstates/cholla_door.json
 f23cc70c5ed20df53ff8c230894889589fe00520 assets/useful-cactus/blockstates/cholla_hanging_sign.json
@@ -14,7 +13,6 @@ f23cc70c5ed20df53ff8c230894889589fe00520 assets/useful-cactus/blockstates/cholla
 12987f60c8983eb98ea412f60c9101a41338ab4f assets/useful-cactus/blockstates/cholla_standing_sign.json
 72fa737b48bda89fc359a5afb834ee6cb54185b8 assets/useful-cactus/blockstates/cholla_trapdoor.json
 12987f60c8983eb98ea412f60c9101a41338ab4f assets/useful-cactus/blockstates/cholla_wall_sign.json
-9993254d14ba6442b6d3a5dda2da2e2558e411c4 assets/useful-cactus/blockstates/stripped_cholla_block.json
 e2862b52072bc7f5a4081f3eea3f675496cb3679 assets/useful-cactus/items/cholla_block.json
 5cfebc651d45e0af585a4279d4ecc78e0a0a32c0 assets/useful-cactus/items/cholla_button.json
 0fa6e8fc33b968302990e11eff1e835849354767 assets/useful-cactus/items/cholla_door.json
@@ -32,8 +30,6 @@ f508d3da12bcadff0de26a8519d0ef3127f751b9 assets/useful-cactus/items/cholla_stair
 10d2e43af0aea72f0ebb94f327d82950109cf36a assets/useful-cactus/items/cholla_trapdoor.json
 42e6d367da3db3021aba6cd1775751d5c8efbf4a assets/useful-cactus/items/dried_cholla.json
 733009f6508c3274e552988cb7f9ee950049f890 assets/useful-cactus/items/stripped_cholla_block.json
-4d8916b31ed72fede15edb246581e11c219b1913 assets/useful-cactus/models/block/cholla_block.json
-73233d46ede8b4195704f972d3de05eab29e8679 assets/useful-cactus/models/block/cholla_block_horizontal.json
 76937b4946326a78cfe3dd4977454aa9a4817170 assets/useful-cactus/models/block/cholla_button.json
 f8bdde7c00602dc10c671a87e7ce74627d90dea8 assets/useful-cactus/models/block/cholla_button_inventory.json
 31a7fccb777dc1695d98aab3ac807ad31a070039 assets/useful-cactus/models/block/cholla_button_pressed.json
@@ -64,8 +60,6 @@ b8153f71888af7265467c230740c3450c18d816b assets/useful-cactus/models/block/choll
 70b355418a41ba8a87b8b9736a25d5fefe0809d1 assets/useful-cactus/models/block/cholla_trapdoor_bottom.json
 fa394ebb290bd0b436a396b18ba58206cac5dce5 assets/useful-cactus/models/block/cholla_trapdoor_open.json
 9f1c79681bbbb349d983164a2a04c81608426f52 assets/useful-cactus/models/block/cholla_trapdoor_top.json
-61d32a810cdb6d7049c127f98fcf899a4e509152 assets/useful-cactus/models/block/stripped_cholla_block.json
-937c96a952de28ac594aa12f4f8213114b4903b9 assets/useful-cactus/models/block/stripped_cholla_block_horizontal.json
 a1639b8d5c84063ea236ba996ac1f1ee59f64b46 assets/useful-cactus/models/item/cholla_door.json
 634ae23623056560a683c6745e78f59a91de1693 assets/useful-cactus/models/item/cholla_hanging_sign.json
 ba69dcab72581952b27ea72760a860225b741311 assets/useful-cactus/models/item/cholla_sign.json

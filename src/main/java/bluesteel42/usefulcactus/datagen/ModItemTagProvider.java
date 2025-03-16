@@ -19,7 +19,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-        getOrCreateTagBuilder(ItemTags.BAMBOO_BLOCKS)
+        getOrCreateTagBuilder(ModTags.Items.CHOLLA_BLOCKS)
                 .add(ModBlocks.CHOLLA_BLOCK.asItem())
                 .add(ModBlocks.STRIPPED_CHOLLA_BLOCK.asItem());
 

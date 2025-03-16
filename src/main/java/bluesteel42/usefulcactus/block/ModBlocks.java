@@ -27,13 +27,13 @@ public class ModBlocks {
     public static final Block DRIED_CHOLLA = registerBlock(
             "dried_cholla",
             DriedChollaBlock::new,
-            Blocks.createLogSettings(MapColor.DARK_GREEN, MapColor.STONE_GRAY, BlockSoundGroup.BAMBOO_WOOD)
+            Blocks.createLogSettings(MapColor.DEEPSLATE_GRAY, MapColor.DEEPSLATE_GRAY, BlockSoundGroup.BAMBOO_WOOD)
     );
 
     public static final Block CHOLLA_BLOCK = registerBlock(
             "cholla_block",
             PillarBlock::new,
-            Blocks.createLogSettings(MapColor.DARK_GREEN, MapColor.STONE_GRAY, BlockSoundGroup.BAMBOO_WOOD)
+            Blocks.createLogSettings(MapColor.DARK_GREEN, MapColor.DEEPSLATE_GRAY, BlockSoundGroup.BAMBOO_WOOD)
     );
 
     public static final Block STRIPPED_CHOLLA_BLOCK = registerBlock(

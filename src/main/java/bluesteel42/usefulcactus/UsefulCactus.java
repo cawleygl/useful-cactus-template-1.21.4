@@ -4,6 +4,7 @@ import bluesteel42.usefulcactus.entity.ModBoats;
 import bluesteel42.usefulcactus.item.ModItems;
 import bluesteel42.usefulcactus.block.ModBlocks;
 import bluesteel42.usefulcactus.registries.ModRegistries;
+import bluesteel42.usefulcactus.util.ModTags;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FuelRegistryEvents;
@@ -29,10 +30,14 @@ public class UsefulCactus implements ModInitializer {
 		ModRegistries.registerStrippables();
 		ModRegistries.registerCompostables();
 
-		// Set Dried Cholla as a fuel
+		// Set Dried Cholla and Cholla Blocks as a fuel
 		FuelRegistryEvents.BUILD.register((builder, context) -> {
-			// You can add multiple items at once in this lambda.
 			builder.add(ModBlocks.DRIED_CHOLLA, 50);
+			builder.add(ModTags.Items.CHOLLA_BLOCKS, 300);
+
+			builder.add(ModBlocks.CHOLLA_MOSAIC, 300);
+			builder.add(ModBlocks.CHOLLA_MOSAIC_SLAB, 150);
+			builder.add(ModBlocks.CHOLLA_MOSAIC_STAIRS, 300);
 		});
 
 		LOGGER.info("Hello Fabric world!");

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "useful-cactus:block/cholla_block_x"
+    },
+    "axis=y": {
+      "model": "useful-cactus:block/cholla_block_y"
+    },
+    "axis=z": {
+      "model": "useful-cactus:block/cholla_block_z"
+    }
+  }
+}
