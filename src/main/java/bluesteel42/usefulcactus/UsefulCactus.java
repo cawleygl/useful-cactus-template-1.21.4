@@ -7,6 +7,7 @@ import bluesteel42.usefulcactus.registries.ModRegistries;
 import bluesteel42.usefulcactus.util.ModTags;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistryEvents;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -39,6 +40,19 @@ public class UsefulCactus implements ModInitializer {
 			builder.add(ModBlocks.CHOLLA_MOSAIC_SLAB, 150);
 			builder.add(ModBlocks.CHOLLA_MOSAIC_STAIRS, 300);
 		});
+
+		// Add blocks to flammable registry
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.CHOLLA_PLANKS, 5, 20);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.CHOLLA_MOSAIC, 5, 20);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.CHOLLA_SLAB, 5, 20);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.CHOLLA_MOSAIC_SLAB, 5, 20);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.CHOLLA_FENCE_GATE, 5, 20);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.CHOLLA_FENCE, 5, 20);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.CHOLLA_STAIRS, 5, 20);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.CHOLLA_MOSAIC_STAIRS, 5, 20);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.CHOLLA_BLOCK, 5, 5);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_CHOLLA_BLOCK, 5, 5);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DRIED_CHOLLA, 60, 60);
 
 		LOGGER.info("Hello Fabric world!");
 	}

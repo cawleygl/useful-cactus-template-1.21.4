@@ -1,14 +1,11 @@
 package bluesteel42.usefulcactus.datagen;
 
 import bluesteel42.usefulcactus.block.ModBlocks;
-import bluesteel42.usefulcactus.entity.ModBoats;
-import bluesteel42.usefulcactus.item.ModItems;
 import bluesteel42.usefulcactus.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
-import net.minecraft.registry.tag.ItemTags;
 
 import java.util.concurrent.CompletableFuture;
 
