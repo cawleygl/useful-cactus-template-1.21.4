@@ -30,30 +30,8 @@ public class UsefulCactus implements ModInitializer {
 		ModBoats.initialize();
 		ModRegistries.registerStrippables();
 		ModRegistries.registerCompostables();
-
-		// Set Dried Cholla and Cholla Blocks as a fuel
-		FuelRegistryEvents.BUILD.register((builder, context) -> {
-			builder.add(ModBlocks.DRIED_CHOLLA, 50);
-			builder.add(ModTags.Items.CHOLLA_BLOCKS, 300);
-
-			builder.add(ModBlocks.CHOLLA_MOSAIC, 300);
-			builder.add(ModBlocks.CHOLLA_MOSAIC_SLAB, 150);
-			builder.add(ModBlocks.CHOLLA_MOSAIC_STAIRS, 300);
-		});
-
-		// Add blocks to flammable registry
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.CHOLLA_PLANKS, 5, 20);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.CHOLLA_MOSAIC, 5, 20);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.CHOLLA_SLAB, 5, 20);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.CHOLLA_MOSAIC_SLAB, 5, 20);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.CHOLLA_FENCE_GATE, 5, 20);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.CHOLLA_FENCE, 5, 20);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.CHOLLA_STAIRS, 5, 20);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.CHOLLA_MOSAIC_STAIRS, 5, 20);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.CHOLLA_BLOCK, 5, 5);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_CHOLLA_BLOCK, 5, 5);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DRIED_CHOLLA, 60, 60);
-
+		ModRegistries.registerFlammables();
+		ModRegistries.registerFuels();
 		LOGGER.info("Hello Fabric world!");
 	}
 }
