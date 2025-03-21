@@ -35,7 +35,7 @@ public class ModRegistries {
     }
 
     public static void registerFuels() {
-        // Set Dried Cholla and Cholla Blocks as a fuel
+        // Set Dried Cholla and Cholla Blocks as a fuel (Other blocks added through tags)
         FuelRegistryEvents.BUILD.register((builder, context) -> {
             builder.add(ModBlocks.DRIED_CHOLLA, 50);
             builder.add(ModTags.Items.CHOLLA_BLOCKS, 300);
